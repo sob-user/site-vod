@@ -15,5 +15,9 @@ $("#input input").click(function() {
 	$("#home, #logo").click(function(){
 	$(location).attr('href',"site-vod.html");
 })
+	$(".subscribe").click(function(){
+	$(location).attr('href',"subscribe.html");
+})
+
 
 });
