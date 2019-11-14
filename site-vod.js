@@ -1,21 +1,31 @@
-var leftKey = 37, upKey = 38, rightKey = 39, downKey = 40;
-var keystate;
-document.addEventListener("keydown", function (e) {
-    keystate[e.keyCode] = true;
-});
-document.addEventListener("keyup", function (e) {
-    delete keystate[e.keyCode];
-});
+/* Slideshow JavaScript */
+var slideIndex = 1;
+showSlides(slideIndex);
 
-if (keystate[leftKey]) {
-//code to be executed when left arrow key is pushed.
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
-if (keystate[upKey]) {
-//code to be executed when up arrow key is pushed.
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
-if (keystate[rightKey]) {
-//code to be executed when right arrow key is pushed.
+
+function showSlides(n) {
+  var i;
+  var slides = $(".mySlides");
+  var dots = $(".dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length};
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].classList.add("active");
 }
-if (keystate[downKey]) {
-//code to be executed when down arrow key is pushed.
-}
+
+$('.text, .legend').hover(function() {
+    $('.legend').toggleClass('toggled');
+});
