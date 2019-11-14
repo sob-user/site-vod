@@ -1,27 +1,75 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
-	<title>MVI</title>
-	<link rel="stylesheet" href="site-vod.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
-	
+        <link rel="stylesheet" href="slidettoggle.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-	<section id="header">
-	</section>
 
-	<section id="abonnez-vous"></section>
-	</section>
+        <div class="slideshow-container">
+                <div class="mySlides">
+                  <!-- <div class="numbertext">NOUVEAUTÉ</div> -->
+                  <img class="image-film" src="Images/Landing_page_home/Dr_sleep.jpg" style="width: 100%;">
+                  <div class="arrow-right">
+                        <span>NOUVEAUTÉ</span>
+                  </div>
+                  <div class="text">DR SLEEP</div>
+                  <div class="legend">
+                      <p>Le chaos règne partout dans le pays, depuis la Maison Blanche jusqu’aux petites villes les plus reculées. Nos quatre tueurs doivent désormais affronter de nouvelles races de zombies qui ont évolué en dix ans et une poignée de rescapés humains. Mais ce sont les conflits propres à cette « famille » improvisée qui restent les plus difficiles à gérer…</p>
+                  </div>
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">NOUVEAUTÉ</div>
+                  <img class="image-film" src="Images/Landing_page_home/Joker.jpg" style="width: 100%;">
+                  <div class="arrow-right">
+                        <span>NOUVEAUTÉ</span>
+                  </div>
+                  <div class="text">JOKER</div>
+                  <div class="legend">
+                        <p>Le film, qui relate une histoire originale inédite sur grand écran, se focalise sur la figure emblématique de l’ennemi juré de Batman. Il brosse le portrait d’Arthur Fleck, un homme sans concession méprisé par la société. </p>
+                  </div>
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">NOUVEAUTÉ</div>
+                  <img class="image-film" src="Images/Landing_page_home/Parasite.jpg" style="width: 100%;">
+                  <div class="arrow-right">
+                        <span>NOUVEAUTÉ</span>
+                  </div>
+                  <div class="text">PARASITE</div>
+                  <div class="legend">
+                        <p>Toute la famille de Ki-taek est au chômage, et s’intéresse fortement au train de vie de la richissime famille Park. Un jour, leur fils réussit à se faire recommander pour donner des cours particuliers d’anglais chez les Park. C’est le début d’un engrenage incontrôlable, dont personne ne sortira véritablement indemne...</p>
+                  </div>
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">NOUVEAUTÉ</div>
+                  <img class="image-film" src="Images/Landing_page_home/Retour_a_zombieland.jpg" style="width: 100%;">
+                  <div class="arrow-right">
+                        <span>NOUVEAUTÉ</span>
+                  </div>
+                  <div class="text">RETOUR À ZOMBIELAND</div>
+                  <div class="legend">
+                        <p>Le chaos règne partout dans le pays, depuis la Maison Blanche jusqu’aux petites villes les plus reculées. Nos quatre tueurs doivent désormais affronter de nouvelles races de zombies qui ont évolué en dix ans et une poignée de rescapés humains. Mais ce sont les conflits propres à cette « famille » improvisée qui restent les plus difficiles à gérer…</p>
+                  </div>
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-	<section id="slide">
-
-	</section>
-
-	<section id="catalogue">
-	</section>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript" src="slide.js"></script>
-
+                <div class="points" style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                      </div>
+              </div>
+    
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+              <script type="text/javascript" src="slidetoggle.js"></script>
 </body>
 </html>
