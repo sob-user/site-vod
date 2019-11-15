@@ -12,8 +12,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var slides = $(".mySlides");
+  var dots = $(".dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length};
   for (i = 0; i < slides.length; i++) {
@@ -26,6 +26,7 @@ function showSlides(n) {
   dots[slideIndex-1].classList.add("active");
 }
 
-$('.text, .legend').hover(function() {
-    $('.legend').toggleClass('toggled');
-});
+// $('.text, .legend').hover(function() {
+//     $('.legend').toggleClass('toggled');
+//     $('.text').toggleClass('bold-text');
+// });

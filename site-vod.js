@@ -26,6 +26,7 @@ function showSlides(n) {
   dots[slideIndex-1].classList.add("active");
 }
 
-$('.text, .legend').hover(function() {
-    $('.legend').toggleClass('toggled');
-});
+// $('.text, .legend').hover(function() {
+//     $('.legend').toggleClass('toggled');
+//     $('.text').toggleClass('bold-text');
+// });
