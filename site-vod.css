@@ -39,24 +39,20 @@
 
 
 /* code section P.A (coverflow) */
-body {
-    margin: 0;
-}
 #catalogue {
     background: #4C4C4C;
     width: 100%; 
     height: 33%;
-    margin: 0; 
-    padding: 0;
     display: flex; 
     flex-direction: column;
     
 }
 
-.titreCatalogue {
+.titreCatalogue h1 {
     font-family: 'Limelight', cursive;
     font-family: 'Staatliches', cursive;
     font-family: 'Cinzel', serif;
+    margin: 0;
     font-size: 35px;
     letter-spacing: 3%;
     color: white;
@@ -66,27 +62,61 @@ body {
 }
 
 /* contenaire permettant de réaliser le coverflow */
-.coverFlow {
-    height: 50%; 
-    margin: 0; 
-    padding: 0;
+.coverflow {
+    height: 150px; 
     
+    text-align: center;
+    
+    /* définition de la position de l'élement(en 3D) avec de la perspective, elle s'applique sur les éléments enfants (la div #cover) */
+    -webkit-perspective: 900px;
+    -moz-perspective: 900px;
+    perspective: 900px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     }
 
 
   
 .cover {
-    height: 42vh;
-    width: 15vw;
+    height: 130px;
+    width: 130px;
     display: inline-block;
-    box-shadow: 0px 5px 10px 0px #D6D6D6;
+    
+
+    margin: 0 -50px; 
+    /* propriété definissant la rotation des éléments du coverflow */
+    -webkit-transform: rotateY(45deg);
+    -moz-transform: rotateY(45deg);
+    transform:rotateY(45deg);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+  
+    box-shadow: 0px 3px 5px 0px #D6D6D6;
+    
     line-height: 150px;
+    
     cursor: pointer;
     }
 
+.active {
+    margin: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+    }
+
+.active ~ .cover {
+    -webkit-transform: rotateY(-45deg);
+    -moz-transform: rotateY(-45deg);
+    transform: rotateY(-45deg);
+    }
+
 .cover img {
-    height:50%;
-    width: 20%;
+    height:100%;
+    width: 100%;
     box-shadow: 0px 5px 10px 0px #D6D6D6;
  }
 
+ 

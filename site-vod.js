@@ -1,10 +1,6 @@
-// coverFlow
 $(function() {
-	$('.coverflow').coverflow();
+	$( ".cover" ).click(function() {
+    	$( ".active" ).removeClass( "active" );
+    	$( this ).addClass( "active" );
+	});
 });
-// $(function() {
-// 	$( ".cover" ).click(function() {
-//     	$( ".active" ).removeClass( "active" );
-//     	$( this ).addClass( "active" );
-// 	});
-// });
