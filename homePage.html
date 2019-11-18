@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MVI HOME</title>
+	<link rel="stylesheet" type="text/css" href="Public/css/homePage.css">
+	<script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="Public/js/homePage.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+	      <div class="modal" style="display: none;">
+                    <img src="Public/img/logo.png">
+                    <h1>CONNEXION</h1>
+                    <form id="content1">
+                        <input type="text" name="input" class="input" placeholder="email"></br>
+                        <input type="text" name="input" class="input" placeholder="password"></br>
+                        <button>connectez-vous</button>
+                      </form>
+                  <a href="#" class="close">fermer</a>
+            </div>
+<div class="modal-bg" style="display: none;"></div>
+
+
+	<section id="header">
+		<article class="logo">
+			<div id="logo">
+				
+			</div>
+
+		</article>
+		
+		<article class="menu">
+			<ul>
+				        <li id="home">HOME</li>
+                <li>ACTU</li>
+                <li>CATALOGUE</li>
+                <li>CONTACT</li>
+                <li id="connexion">CONNEXION</li>
+			</ul>
+		</article>
+		
+		<article class="rechercher">
+			<div id="input">
+			  <form id="content">
+                 <input type="text" name="input" class="input" value="rechercher...">
+              </form>
+             </div>
+             <div id="button">
+                 <button type="submit" class="search">GO</button>
+             </div>
+		</article>
+	</section>
+
+	<section id="abonnez-vous">
+		<div class="banner">
+  <div>
+          <button class="subscribe">ABONNEZ-VOUS</button> 
+
+  </div>
+    <video autoplay loop muted class="banner__video">
+      <source src="Public/video/one.webm" type="video/webm">
+      <source src="Public/video/one.mp4" type="video/mp4">
+    </video>
+  </div>
+		
+  </section>
+  
+	<section id="actu">
+
+ <div class="cadre">
+      <div class="slideshow-container">
+          <div class="mySlides">
+          <!-- <div class="numbertext">NOUVEAUTÉ</div> -->
+                <img class="image-film" src="Public/img/Dr_sleep.jpg" style="width: 100%;">
+                <div class="arrow-right">
+                      <span>NOUVEAUTÉ</span>
+                </div>
+                <div class="text">
+                      <p class="titre-film">DOCTOR SLEEP</p>
+                      <p class="legende-film">Encore profondément marqué par le traumatisme qu'il a vécu, enfant, à l'Overlook Hotel, Dan Torrance a dû se battre pour tenter de trouver un semblant de sérénité. Mais quand il rencontre Abra, courageuse adolescente aux dons extrasensoriels, ses vieux démons resurgissent. Car la jeune fille, consciente que Dan a les mêmes pouvoirs qu'elle, a besoin de son aide : elle cherche à lutter contre la redoutable Rose Claque et sa tribu du Nœud Vrai qui se nourrissent des dons d'innocents comme elle pour conquérir l'immortalité. Formant une alliance inattendue, Dan et Abra s'engagent dans un combat sans merci contre Rose. Face à l'innocence de la jeune fille et à sa manière d'accepter son don, Dan n'a d'autre choix que de mobiliser ses propres pouvoirs, même s'il doit affronter ses peurs et réveiller les fantômes du passé…</p>
+                </div>
+          
+        </div>
+      
+        <div class="mySlides">
+          <img class="image-film" src="Public/img/Joker.jpg" style="width: 100%;">
+          <div class="arrow-right">
+                <span>NOUVEAUTÉ</span>
+          </div>
+          <div class="text">
+                <p class="titre-film">JOKER</p>
+                <p class="legende-film">Le film, qui relate une histoire originale inédite sur grand écran, se focalise sur la figure emblématique de l’ennemi juré de Batman. Il brosse le portrait d’Arthur Fleck, un homme sans concession méprisé par la société. </p>
+          </div>
+        </div>
+      
+        <div class="mySlides">
+          <img class="image-film" src="Public/img/Parasite.jpg" style="width: 100%;">
+          <div class="arrow-right">
+                <span>NOUVEAUTÉ</span>
+          </div>
+          <div class="text">
+                <p class="titre-film">PARASITE</p>
+                <p class="legende-film">Toute la famille de Ki-taek est au chômage, et s’intéresse fortement au train de vie de la richissime famille Park. Un jour, leur fils réussit à se faire recommander pour donner des cours particuliers d’anglais chez les Park. C’est le début d’un engrenage incontrôlable, dont personne ne sortira véritablement indemne...</p>
+          </div>
+        </div>
+      
+        <div class="mySlides">
+          <img class="image-film" src="Public/img/Retour_a_zombieland.jpg" style="width: 100%;">
+          <div class="arrow-right">
+                <span>NOUVEAUTÉ</span>
+          </div>
+          <div class="text">
+                <p class="titre-film">RETOUR À ZOMBIELAND</p>
+                <p class="legende-film">Le chaos règne partout dans le pays, depuis la Maison Blanche jusqu’aux petites villes les plus reculées. Nos quatre tueurs doivent désormais affronter de nouvelles races de zombies qui ont évolué en dix ans et une poignée de rescapés humains. Mais ce sont les conflits propres à cette « famille » improvisée qui restent les plus difficiles à gérer…</p>
+          </div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="points" style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
+      </div>
+ </div>
+
+  </section>
+  
+	<section id="catalogue">
+    
+		<div class="titreCatalogue">
+        <h1>UN CATALOGUE VASTE</h1>
+        </div>
+    
+        <div class="coverflow">
+          <img class="cover" src="Public/img/jokerr.jpg" alt="Joker">
+          <img class="cover" src="Public/img/mademoiselle.jpg" alt="mademoiselle">
+          <img class="cover" src="Public/img/memorie-of-murderjpg.jpg" alt="Memorie of murder">
+          <img class="cover" src="Public/img/batman-nolan.jpg" alt="Batman trilogy">
+          <img class="cover" src="Public/img/premier-contact.jpg" alt="Premier contact">
+          <img class="cover" src="Public/img/interstellar.jpg" alt="Interstellar">
+          <img class="cover" src="Public/img/parasite2.jpg" alt="Parasite">
+        </div>       
+		
+	</section >
+
+</body>
+</html>
