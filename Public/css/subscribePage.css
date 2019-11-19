@@ -140,7 +140,7 @@ img{
   align-items: center;
 }
 #sub{
-  background-image: url('img/cinema.jpeg');
+  background-image: url('../img/cinema.jpeg');
   background-size: cover;
   min-height: 90vh;
   width: 100%;
