@@ -95,7 +95,7 @@ li:hover{
 .modal {
   background: #00A2FB;
   width: 300px;
-  height: 390px;
+  height: 450px;
   text-align: center;
   box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
@@ -193,4 +193,52 @@ img{
 }
 .description{
   display: none;
+}
+
+.modalSuscribe {
+  background: #00A2FB;
+  width: 370px;
+  height: 520px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+      -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  position: fixed;
+  top: 27%;
+  margin-top: -50px;
+  left: 45%;
+  margin-left: -100px;
+  line-height: 25px;
+  z-index: 99;
+  border-radius: 5px;
+  font-family: 'Playfair Display', serif;
+}
+.modalSuscribe a {
+  line-height: 4em;
+  text-decoration: none;
+  color: white;
+}
+.modalSuscribe h1{
+  font-size: 18px;
+}
+img{
+  height: 47%;
+}
+.modalSuscribe-bg {
+  background: black;
+  zoom: 1;
+  opacity: 0.8;
+  filter: alpha(opacity=80); 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+#content2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }

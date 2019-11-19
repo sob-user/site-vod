@@ -10,6 +10,17 @@ $(document).ready(function() {
         $('.modal-bg').hide();
     })
 
+    $('.inscription').click(function(){
+      $('.modalSuscribe').show();
+      $('.modalSuscribe-bg').show()
+
+    })
+
+    $('.modalSuscribe .close2').click(function(){
+      $('.modalSuscribe').hide();
+      $('.modalSuscribe-bg').hide();
+    })
+
     $("#home, #logo").click(function(){
     $(location).attr('href',"homePage.html");
 })
