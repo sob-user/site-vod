@@ -321,123 +321,91 @@ img{
     background-color: #54C1FB;
   } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* code section P.A (coverflow) */
 #catalogue {
     background: #4C4C4C;
     width: 100%; 
     height: 33.3333%;
     display: flex; 
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     
 }
 
 .titreCatalogue h1 {
-    font-family: 'Limelight', cursive;
-    font-family: 'Staatliches', cursive;
-    font-family: 'Cinzel', serif;
-    margin: 0;
-    font-size: 35px;
-    letter-spacing: 3%;
-    color: white;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
+  font-family: 'Limelight', cursive;
+  font-family: 'Staatliches', cursive;
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  font-size: 35px;
+  letter-spacing: 3%;
+  color: white;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
 
 /* contenaire permettant de réaliser le coverflow */
 .coverflow {
-    height: 150px; 
-    
-    text-align: center;
-    
-    /* définition de la position de l'élement(en 3D) avec de la perspective, elle s'applique sur les éléments enfants (la div #cover) */
-    -webkit-perspective: 900px;
-    -moz-perspective: 900px;
-    perspective: 900px;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    }
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%; 
+width: 45%;
+text-align: center;
+/* définition de la position de l'élement(en 3D) avec de la perspective, elle s'applique sur les éléments enfants (la div #cover) */
+-webkit-perspective: 900px;
+-moz-perspective: 900px;
+perspective: 900px;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
 
 
-  
+
 .cover {
-    height: 130px;
-    width: 130px;
-    display: inline-block;
-    
-
-    margin: 0 -50px; 
-    /* propriété definissant la rotation des éléments du coverflow */
-    -webkit-transform: rotateY(45deg);
-    -moz-transform: rotateY(45deg);
-    transform:rotateY(45deg);
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    transition: .3s;
+height: 60vh;
+width: 40%;
+display: flex;
+justify-content: center;
+align-items: center;
   
-    box-shadow: 0px 3px 5px 0px #D6D6D6;
-    
-    line-height: 150px;
-    
-    cursor: pointer;
-    }
 
-.active {
-    margin: 0;
-    -webkit-transform: none;
-    -moz-transform: none;
-    transform: none;
-    }
+margin: 0 -50px; 
+/* propriété definissant la rotation des éléments du coverflow */
+-webkit-transform: rotateY(60deg);
+-moz-transform: rotateY(60deg);
+transform:rotateY(60deg);
+-webkit-transition: .3s;
+-moz-transition: .3s;
+transition: .3s;
 
-.active ~ .cover {
-    -webkit-transform: rotateY(-45deg);
-    -moz-transform: rotateY(-45deg);
-    transform: rotateY(-45deg);
-    }
+box-shadow: 0px 3px 5px 0px #D6D6D6;
+  
+line-height: 150px;
+  
+cursor: pointer;
+}
 
 .cover img {
-    height:100%;
-    width: 100%;
-    box-shadow: 0px 5px 10px 0px #D6D6D6;
- }
+height:100%;
+width: 100%;
+}
 
- footer {
-   height: 3%;
-   color: white;
- }
+.active {
+z-index: 8;
+margin: 0;
+-webkit-transform: none;
+-moz-transform: none;
+transform: none;
+
+box-shadow: 0px 5px 10px 0px #D6D6D6;
+}
+
+.active ~ .cover {
+-webkit-transform: rotateY(-60deg);
+-moz-transform: rotateY(-60deg);
+transform: rotateY(-60deg);
+}
