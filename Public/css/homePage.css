@@ -3,10 +3,10 @@
 body{
 	background: black;
 	width: 100%;
-	height: 100%;
+	height: 300vh;
 }
 #header{
-	height: 10%;
+	/* height: 10%; */
 	width: 100%;
 	display: flex;
 	background: black;
@@ -56,7 +56,7 @@ li:hover{
 	align-items: center;
 }
 #content{
-    width: 80%;
+  width: 80%;
 	height: 50%;
 	display: flex;
 	justify-content: center;
@@ -174,7 +174,7 @@ img{
     margin: auto;
     width: 100%;
     object-fit: cover;
-    height: 100%;
+    height: 30%;
   }
   
   .mySlides {
@@ -325,46 +325,11 @@ img{
     background-color: #54C1FB;
   } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* code section P.A (coverflow) */
 #catalogue {
-    background: #4C4C4C;
+    background: black;
     width: 100%; 
-    height: 33%;
+    height: 30%;
     display: flex; 
     flex-direction: column;
     
@@ -385,60 +350,66 @@ img{
 
 /* contenaire permettant de réaliser le coverflow */
 .coverflow {
-    height: 150px; 
-    
-    text-align: center;
-    
-    /* définition de la position de l'élement(en 3D) avec de la perspective, elle s'applique sur les éléments enfants (la div #cover) */
-    -webkit-perspective: 900px;
-    -moz-perspective: 900px;
-    perspective: 900px;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%; 
+  width: 90%;
+  text-align: center;
+  /* définition de la position de l'élement(en 3D) avec de la perspective, elle s'applique sur les éléments enfants (la div #cover) */
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
 
 
   
 .cover {
-    height: 130px;
-    width: 130px;
-    display: inline-block;
+  /* height: 130px; */
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
     
 
-    margin: 0 -50px; 
-    /* propriété definissant la rotation des éléments du coverflow */
-    -webkit-transform: rotateY(45deg);
-    -moz-transform: rotateY(45deg);
-    transform:rotateY(45deg);
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    transition: .3s;
+  margin: 0 -50px; 
+  /* propriété definissant la rotation des éléments du coverflow */
+  -webkit-transform: rotateY(45deg);
+  -moz-transform: rotateY(45deg);
+  transform:rotateY(45deg);
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
   
-    box-shadow: 0px 3px 5px 0px #D6D6D6;
+  box-shadow: 0px 3px 5px 0px #D6D6D6;
     
-    line-height: 150px;
+  line-height: 150px;
     
-    cursor: pointer;
-    }
+  cursor: pointer;
+}
+
+  .cover img {
+  height:100%;
+  width: 100%;
+  box-shadow: 0px 5px 10px 0px #D6D6D6;
+}
 
 .active {
-    margin: 0;
-    -webkit-transform: none;
-    -moz-transform: none;
-    transform: none;
-    }
+  margin: 0;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+  }
 
 .active ~ .cover {
-    -webkit-transform: rotateY(-45deg);
-    -moz-transform: rotateY(-45deg);
-    transform: rotateY(-45deg);
-    }
+  -webkit-transform: rotateY(-45deg);
+  -moz-transform: rotateY(-45deg);
+  transform: rotateY(-45deg);
+}
 
-.cover img {
-    height:100%;
-    width: 100%;
-    box-shadow: 0px 5px 10px 0px #D6D6D6;
- }
+
 
  

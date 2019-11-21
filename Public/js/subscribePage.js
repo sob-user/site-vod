@@ -34,12 +34,12 @@ $(document).ready(function() {
   console.log(username, email, password);
 
   $.post("https://brianboudrioux.fr/simplon/api/users", {username: username, email: email, password: password}, function(data){
-      window.location.href = "homePage.html"
-      // console.log(data.errors);
-      // if (typeof data.errors == undefined)
-      //     window.location.href = "homePage.html"
-      // else
-      // console.log(data.errors);
+      // window.location.href = "homePage.html"
+      console.log(data);
+      if (typeof data.errors == undefined)
+          window.location.href = "homePage.html"
+      else
+      console.log(data.errors);
   })
 
 
