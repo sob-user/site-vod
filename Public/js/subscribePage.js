@@ -24,27 +24,6 @@ $(document).ready(function() {
     $("#home, #logo").click(function(){
     $(location).attr('href',"homePage.html");
 })
-
-  // requette post des utilisateurs
-  $('#submitButton').click(function(e) {
-  let username = $("#usernameInput").val()
-  let email = $("#emailInput").val()
-  let password = $("#passwordInput").val()
-
-  console.log(username, email, password);
-
-  $.post("https://brianboudrioux.fr/simplon/api/users", {username: username, email: email, password: password}, function(data){
-      // window.location.href = "homePage.html"
-      console.log(data);
-      if (typeof data.errors == undefined)
-          window.location.href = "homePage.html"
-      else
-      console.log(data.errors);
-  })
-
-
-  });
-  
     $('.offre1').hover(function(){
     $('.offre1 .description, .offre1 #button-').css('display',"block");
     }, function(){
@@ -63,6 +42,5 @@ $(document).ready(function() {
     $('.offre3 .description, .offre3 #button-').css('display',"none");
   })
 
-  
 
 });
