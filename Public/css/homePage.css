@@ -333,6 +333,14 @@ img{
     
 }
 
+.titreCatalogue {
+  width: 18%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+
+
 .titreCatalogue h1 {
   font-family: 'Limelight', cursive;
   font-family: 'Staatliches', cursive;
@@ -375,9 +383,9 @@ align-items: center;
 
 margin: 0 -50px; 
 /* propriété definissant la rotation des éléments du coverflow */
--webkit-transform: rotateY(60deg);
--moz-transform: rotateY(60deg);
-transform:rotateY(60deg);
+-webkit-transform: rotateY(45deg);
+-moz-transform: rotateY(45deg);
+transform:rotateY(45deg);
 -webkit-transition: .3s;
 -moz-transition: .3s;
 transition: .3s;
@@ -405,7 +413,7 @@ box-shadow: 0px 5px 10px 0px #D6D6D6;
 }
 
 .active ~ .cover {
--webkit-transform: rotateY(-60deg);
--moz-transform: rotateY(-60deg);
-transform: rotateY(-60deg);
+-webkit-transform: rotateY(-45deg);
+-moz-transform: rotateY(-45deg);
+transform: rotateY(-45deg);
 }
