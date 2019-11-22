@@ -45,4 +45,10 @@ $(function() {
 	
 });
 
+$( ".cover" ).click(function() {
+	var background = $( this ).attr( "src" );
+	var style = ("background-image", background)
+	$( "#catalogue" ).attr("style", style);
+  });
+
 });

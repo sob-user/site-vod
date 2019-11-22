@@ -1,5 +1,5 @@
 body{
-	background: black;
+	/* background: black; */
 	width: 100%;
     height: 250vh;
     margin: 0;
@@ -204,7 +204,7 @@ li:hover{
  
 
  #catalogue {
-     background: black;
+     /* background: black; */
      width: 100%; 
      height: 50%;
      display: flex; 
