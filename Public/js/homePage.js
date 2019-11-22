@@ -55,12 +55,12 @@ $('#dot1, #dot2, #dot3, #dot4').click(function(n){
 
 // cover flow
 
-// $(function() {
-// 	$( ".cover" ).click(function() {
-//     	$( ".active" ).removeClass( "active" );
-//     	$( this ).addClass( "active" );
-// 	});
-// });
+$(function() {
+	$( ".cover" ).click(function() {
+    	$( ".active" ).removeClass( "active" );
+    	$( this ).addClass( "active" );
+	});
+});
 
 
 });
