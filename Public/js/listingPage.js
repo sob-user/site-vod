@@ -1,4 +1,5 @@
 $(document).ready(function() {
+// test git
 
 /* Slideshow JavaScript */
 var slideIndex = 1;
