@@ -333,6 +333,14 @@ img{
     
 }
 
+.titreCatalogue {
+  width: 18%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+
+
 .titreCatalogue h1 {
   font-family: 'Limelight', cursive;
   font-family: 'Staatliches', cursive;
@@ -408,6 +416,7 @@ box-shadow: 0px 5px 10px 0px #D6D6D6;
 -webkit-transform: rotateY(-45deg);
 -moz-transform: rotateY(-45deg);
 transform: rotateY(-45deg);
+<<<<<<< HEAD
 }
 
  footer {
@@ -415,3 +424,6 @@ transform: rotateY(-45deg);
    color: white;
    background-color: grey;
  }
+=======
+}
+>>>>>>> ad0de3764c9ea40ab9274e74c1550133e9e454a6
