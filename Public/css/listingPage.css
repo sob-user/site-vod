@@ -1,16 +1,31 @@
 body{
+<<<<<<< HEAD
     background: black;
     width: 100%;
     padding: 0;
     margin: 0;
+=======
+      /* background: black; */
+      height: 100vh;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+>>>>>>> b6cc35792f61d2c1df587d808093c2ab9e8950b8
 }
 
 #header{
     width: 100%;
+<<<<<<< HEAD
     height: 7vh;
 	display: flex;
 	background: black;
 	background-size: cover;
+=======
+    height: 8%;
+    display: flex;
+    background: black;
+    background-size: cover;
+>>>>>>> b6cc35792f61d2c1df587d808093c2ab9e8950b8
 }
 .logo{
 	width: 10%;
@@ -58,6 +73,7 @@ body{
 }
 
 .listing{
+<<<<<<< HEAD
     background: rgb(71, 71, 71);
 }
 
@@ -105,12 +121,72 @@ h1 {
     background: #10312c;
 }
 
+=======
+    height: 92%;
+    background: rgb(71, 71, 71);
+}
+
+h1 {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.slideMiniature {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.movieList {
+    background: red;
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.movieMiniature:nth-child(1) {
+    background: #47c7b2;
+}
+
+.movieMiniature:nth-child(2) {
+    background: #309e8c;
+}
+
+.movieMiniature:nth-child(3) {
+    background: #16423b;
+}
+
+.movieMiniature:nth-child(4) {
+    background: #10312c;
+}
+
+>>>>>>> b6cc35792f61d2c1df587d808093c2ab9e8950b8
 .movieMiniature:nth-child(5) {
     background: #071614;
 }
 
 .movieMiniature {
+<<<<<<< HEAD
     height: 126px;
+=======
+    height: 90%;
+>>>>>>> b6cc35792f61d2c1df587d808093c2ab9e8950b8
     width: 227px;
     /* transition: -webkit-transform .2s; */
     transition: .2s;

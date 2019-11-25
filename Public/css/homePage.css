@@ -408,13 +408,13 @@ box-shadow: 0px 5px 10px 0px #D6D6D6;
 -webkit-transform: rotateY(-45deg);
 -moz-transform: rotateY(-45deg);
 transform: rotateY(-45deg);
-<<<<<<< HEAD
 }
 
 footer {
   height: 3%;
   color: white;
   background-color: grey;
+<<<<<<< HEAD
 }
 =======
 <<<<<<< HEAD
@@ -443,3 +443,6 @@ footer {
  }
 >>>>>>> parent of ad0de37... début de la structure html de la page des abonnés qui sera généré dynamiquement via js
 >>>>>>> c0bc2ec7fba6aaf37852136c18610fe9ba63f1a4
+=======
+}
+>>>>>>> b6cc35792f61d2c1df587d808093c2ab9e8950b8
