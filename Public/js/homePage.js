@@ -52,6 +52,8 @@ $('#dot1, #dot2, #dot3, #dot4').click(function(n){
 })
 
 
+
+
 // cover flow
 
 $(function() {
@@ -59,7 +61,6 @@ $(function() {
     	$( ".active" ).removeClass( "active" );
     	$( this ).addClass( "active" );
 	});
-	
 });
 
 
