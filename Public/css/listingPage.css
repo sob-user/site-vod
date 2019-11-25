@@ -140,3 +140,8 @@ ul:hover {
 .movieMiniature:hover ~ .movieMiniature {
     transform: translateX(25%);
 }
+
+.search {
+    background:black;
+    color:white;
+}
