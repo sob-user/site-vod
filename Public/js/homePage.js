@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	// test
 	$('#connexion').click(function(){
 		$('.modal').show();
 		$('.modal-bg').show();
@@ -60,7 +61,6 @@ $(function() {
     	$( ".active" ).removeClass( "active" );
     	$( this ).addClass( "active" );
 	});
-	
 });
 
 
