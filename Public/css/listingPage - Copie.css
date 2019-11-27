@@ -1,0 +1,144 @@
+body{
+      /* background: black; */
+      height: 100vh;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+}
+
+#header{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    background: black;
+    background-size: cover;
+}
+.logo{
+	width: 10%;
+	height: 100%;
+}
+#logo{
+	width: 100%;
+	height: 94%;
+	background-image: url('../img/logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+    margin-left: 5%;
+}
+.menu{
+	width: 70%;
+	height: 100%;
+	display: flex;
+	color: white;
+}
+.navBar{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    align-items: center;
+}
+.navigation{
+	margin-right: 3%;
+	font-family: 'Source Serif Pro', serif;
+	cursor: pointer;
+}
+.navigation:hover{
+	font-weight: bold;
+	color: #00A2FB;
+}
+.rechercher{
+	display: flex;
+	min-height: 100%;
+	width: 20%;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.listing{
+    height: 92%;
+    background: rgb(71, 71, 71);
+}
+
+h1 {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.slideMiniature {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.movieList {
+    background: red;
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.movieMiniature:nth-child(1) {
+    background: #47c7b2;
+}
+
+.movieMiniature:nth-child(2) {
+    background: #309e8c;
+}
+
+.movieMiniature:nth-child(3) {
+    background: #16423b;
+}
+
+.movieMiniature:nth-child(4) {
+    background: #10312c;
+}
+
+.movieMiniature:nth-child(5) {
+    background: #071614;
+}
+
+.movieMiniature {
+    height: 90%;
+    width: 227px;
+    /* transition: -webkit-transform .2s; */
+    transition: .2s;
+    /* transition: transform 0.2s, -webkit-transform 0.2s; */
+}
+
+/* 
+ul:hover {
+    transform: translateX(25%);
+} */
+
+.movieMiniature:hover {
+    transform: scale(1.5);
+    box-shadow: 0px 5px 10px 0px white;
+	transition-duration: 1;
+}
+
+.movieMiniature:hover ~ .movieMiniature {
+    transform: translateX(25%);
+}
