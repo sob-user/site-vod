@@ -63,4 +63,29 @@ $(function() {
 });
 
 
+// verification de la présence de l'utilisateur dans l'api
+
+$('#connexionButton').click(function(e) {
+    let email = $("#emailInput").val()
+	let password = $("#passwordInput").val()
+	e.preventDefault();
+
+    console.log(email, password);
+
+    $.post("https://brianboudrioux.fr/simplon/api/connect", { email: email, password: password }, function(data, status) {
+        console.log("data : " + data);
+
+        if (typeof data.errors === "undefined")
+
+			$(location).attr("href", "landingAbonnes.html");
+		  
+          
+
+        else console.log(data.errors); 
+        
+      });
+
+    });
+
+
 });
