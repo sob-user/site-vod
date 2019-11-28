@@ -50,16 +50,18 @@ $(document).ready(function() {
     let email = $("#emailInput").val()
     let password = $("#passwordInput").val()
 
+    // localStorage.setItem("email", email);
+
 
 
     console.log(username, email, password);
 
     $.post("https://brianboudrioux.fr/simplon/api/users", { username: username, email: email, password: password }, function(data, status) {
         console.log("data : " + data);
+        
 
         if (typeof data.errors === "undefined")
 
-          // document.location.href = "homePage.html";
           $(location).attr("href", "homePage.html");
 
         else console.log(data.errors);

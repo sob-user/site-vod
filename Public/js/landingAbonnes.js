@@ -1,5 +1,17 @@
 $(document).ready(function() {
-  // test git
+  // verfication user localstorage
+
+  if(localStorage!='undefined') {
+    // Récupération de la valeur dans web storage
+    var verificationUser = localStorage.getItem('userConnect');
+    // Vérification de la présence du compteur
+    if(verificationUser === null) {
+
+    console.log("error");
+   
+  } else {
+    console.log(verificationUser)
+  }
   
   /* Slideshow JavaScript */
   var slideIndex = 1;

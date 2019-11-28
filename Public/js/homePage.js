@@ -73,19 +73,19 @@ $('#connexionButton').click(function(e) {
     console.log(email, password);
 
     $.post("https://brianboudrioux.fr/simplon/api/connect", { email: email, password: password }, function(data, status) {
-        console.log("data : " + data);
+        console.log("data : ", data);
+		console.log(status);
+		if (data.auth != false) {
 
-        if (typeof data.errors === "undefined")
-
+			localStorage.setItem("userConnect", email);
 			$(location).attr("href", "landingAbonnes.html");
 		  
-          
-
-        else console.log(data.errors); 
+        }
+        else  alert('Account do not exist')
         
       });
 
-    });
-
-
+	});
+	
 });
+
