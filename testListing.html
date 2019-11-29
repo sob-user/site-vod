@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery.getJSON demo</title>
+    <style>
+        .images{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            background: lightgrey;
+        }
+        img {
+            display: flex;
+            height: auto;
+            width: 100px; 
+            height: 100px;
+            margin: 5%;
+            border: 3px solid green;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <section class="images"></section> 
+
+    <script>
+        (function() {
+            //var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+            var flickerAPI = "https://brianboudrioux.fr/simplon/api/products/category/5dbf0c7d6cb3";
+            function reqFlickr() {
+            $.getJSON( flickerAPI, {
+            //tags: "horses",
+            tags: "",
+            tagmode: "any",
+            format: "json"
+        })
+
+        //Promise...notre 3eme parametre...réponse après appel de la data 
+            .done(function( data ) {
+                console.log(data);
+                $(".images").text("");
+                //on boucle sur tous les items
+                //$.each( data.items, function( i, item ) {
+                $.each( data, function( i, item ) {  
+                	//$.each( data, function( i, category ) {
+               //  $( "<article class=cadre>" ).appendTo( ".images" );   
+               // $( "<img>" ).attr( "src", item.picture ).appendTo( ".cadre" );
+               // $( "<h1>" ).html( item.name ).appendTo( ".cadre" );
+               let article = $("<article class='cadre'></article>");
+               let img = $("<img src='" + item.picture + "' />");
+               let h1 = $("<h1>" + item.name + "</h1>");
+
+               $(article).append(h1);
+               $(article).append(img);
+               $(".images").append(article);
+            //     if ( i === 3 ) {
+            //     return false;
+            // }
+           //});
+      });
+    });
+    }
+    reqFlickr();
+    //window.setInterval(reqFlickr, 5000);
+
+        })();
+
+    </script>
+
+</body>
+
+</html>
