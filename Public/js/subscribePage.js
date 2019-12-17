@@ -62,11 +62,40 @@ $(document).ready(function() {
 
         if (typeof data.errors === "undefined")
 
-          $(location).attr("href", "homePage.html");
+          // $(location).attr("href", "homePage.html");
+          $("#submitButton").click(function(){
+            $('.modal').show();
+            $('.modal-bg').show();
+
+            $('.modalSuscribe').hide();
+            $('.modalSuscribe-bg').hide();
+          })
 
         else console.log(data.errors);
       });
 
+    });
+
+    $('#connexionButton').click(function(e) {
+      let email = $("#emailInput").val()
+      let password = $("#passwordInput").val()
+      e.preventDefault();
+  
+      console.log(email, password);
+  
+      $.post("https://brianboudrioux.fr/simplon/api/connect", { email: email, password: password }, function(data, status) {
+          console.log("data : ", data);
+      console.log(status);
+      if (data.auth != false) {
+  
+        localStorage.setItem("userConnect", email);
+        $(location).attr("href", "landingAbonnes.html");
+        
+          }
+          else  alert('Account do not exist')
+          
+        });
+  
     });
 
 

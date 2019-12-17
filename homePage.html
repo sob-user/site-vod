@@ -38,11 +38,11 @@
 		
 		<article class="menu">
 			<ul>
-				        <li id="home">HOME</li>
-                <li>ACTU</li>
-                <li>CATALOGUE</li>
-                <li>CONTACT</li>
-                <li id="connexion">CONNEXION</li>
+            <li id="home">HOME</li> 
+            <li><a href="#actu"> ACTU </a></li> 
+            <li> <a href="#catalogue">CATALOGUE </a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li id="connexion">CONNEXION</li>
 			</ul>
 		</article>
 		
@@ -68,6 +68,11 @@
       <source src="Public/video/one.webm" type="video/webm">
       <source src="Public/video/one.mp4" type="video/mp4">
     </video>
+
+    <a href="#actu"> 
+      <img id="swipeDownActu" src="Public/img/arrow-down.png" alt="swipe-down">
+    </a>
+
   </div>
 		
   </section>
@@ -121,15 +126,23 @@
             <span class="dot" id="dot2"></span>
             <span class="dot" id="dot3"></span>
             <span class="dot" id="dot4"></span>
+
+            
       </div>
+
+      <a href="#catalogue"> 
+            <img id="swipeDownCatalogue" src="Public/img/arrow-down.png" alt="swipe-down">
+      </a>
+
+      
       </div>
 
   </section>
   
 	<section id="catalogue">
     
-		<div class="titreCatalogue">
-        <h1>CATALOGUE</h1>
+	  <div class="titreCatalogue">
+            <h1>CATALOGUE</h1>
         </div>
     
         <div class="coverflow">
@@ -140,15 +153,25 @@
           <img class="cover" src="Public/img/premier-contact.jpg" alt="Premier contact">
           <img class="cover" src="Public/img/interstellar.jpg" alt="Interstellar">
           <img class="cover" src="Public/img/parasite2.jpg" alt="Parasite">
+
+          <a href="#header"> 
+            <img id="swipeUp" src="Public/img/arrow-down.png" alt="swipeUp">
+         </a>
+
+          
+      
         </div>     
+
+    
 
        <!-- test -->
         
-		
+	
+      
       </section >
 </article>
 
-<footer>
+<footer id="contact">
       FOOTER
 </footer>
 </body>

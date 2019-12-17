@@ -1,17 +1,14 @@
 $(document).ready(function() {
   // verfication user localstorage
+  
 
-  if(localStorage!='undefined') {
+  if(localStorage!= null) {
     // Récupération de la valeur dans web storage
-    var verificationUser = localStorage.getItem('userConnect');
-    // Vérification de la présence du compteur
-    if(verificationUser === null) {
-
-    console.log("error");
-   
-  } else {
-    console.log(verificationUser)
-  }
+     localStorage.getItem('userConnect');
+     console.log(localStorage);
+    // Vérification de la présence de l'utilisateur
+    } 
+    else alert("you are not connect");
   
   /* Slideshow JavaScript */
   var slideIndex = 1;

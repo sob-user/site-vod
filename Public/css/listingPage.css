@@ -1,6 +1,6 @@
 body{
       /* background: black; */
-      height: 100vh;
+      /* height: 100vh; */
       width: 100%;
       padding: 0;
       margin: 0;
@@ -8,7 +8,7 @@ body{
 
 #header{
     width: 100%;
-    height: 8%;
+    height: 8vh;
     display: flex;
     background: black;
     background-size: cover;
@@ -58,90 +58,51 @@ body{
 	align-items: center;
 }
 
-.listing{
-    height: 92%;
+#listing{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
     background: rgb(71, 71, 71);
 }
 
-h1 {
+
+#categoriesList {
+   
+    height: 100%;
+    /* width: 20vw; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .categories{
+    
+    background-color: black;
+    margin: 5px;
+    overflow: hidden;
+    height: 30vh;
+    width: 19vw;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 1rem rgba(0,0,0,.25);
+  }
+  
+
+ .categoriesTitle {
+   
+    text-align: center;
     color: white;
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
 }
 
-.slideMiniature {
-    width: 100%;
-    height: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.movieList {
-    background: red;
-    overflow: hidden;
+.imgCategories {
+    height: 21vh;
+    width: 19vw;
     object-fit: cover;
-    height: 100%;
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+   
 }
 
-
-
-.movieMiniature:nth-child(1) {
-    background: #47c7b2;
-}
-
-.movieMiniature:nth-child(2) {
-    background: #309e8c;
-}
-
-.movieMiniature:nth-child(3) {
-    background: #16423b;
-}
-
-.movieMiniature:nth-child(4) {
-    background: #10312c;
-}
-
-.movieMiniature:nth-child(5) {
-    background: #071614;
-}
-
-.movieMiniature {
-
-    height: 90%;
-    width: 227px;
-    /* transition: -webkit-transform .2s; */
-    transition: .2s;
-    /* transition: transform 0.2s, -webkit-transform 0.2s; */
-}
-
-/* 
-ul:hover {
-    transform: translateX(25%);
-} */
-
-.movieMiniature:hover {
-    transform: scale(1.5);
-    box-shadow: 0px 5px 10px 0px white;
-	transition-duration: 1;
-}
-
-.movieMiniature:hover ~ .movieMiniature {
-    transform: translateX(25%);
-}
-
-.search {
-    background:black;
-    color:white;
-}
